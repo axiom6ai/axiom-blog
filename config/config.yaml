@@ -1,0 +1,32 @@
+name: Axiom-Blog
+env: prod
+host: localhost
+port: 8080
+stdout: true
+desc:
+  keywords: blog
+  desc: axiom blog
+postgres:
+#  user: axiom-api
+#  password: yfVhzT70SgHnh3S4
+#  host: 172.19.226.81
+#  port: 5433
+#  dbname: axiom-api
+  slowThreshold: 2
+  maxIdle: 1
+  maxConn: 2
+  logLevel: 4
+#redis:
+#  host: 81.68.251.252
+#  password: chenXI951026.
+#  port: 6379
+uuid:
+  start_time: 2021-09-18 00:00:00 +0000
+  base: 32
+token:
+  signKey: xichen.ethan
+  expires: 1
+  issuer: axiom
+  subject: axiom-blog-token
+defaultRole:
+  ordinaryUser: 普通用户
